@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/e52b6bc876104816bb4b3eccaf9c8674/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e52b6bc876104816bb4b3eccaf9c8674
+run_name: handsome-grub-521
+run_uuid: e52b6bc876104816bb4b3eccaf9c8674
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690367378447
+status: 1
+tags: []
+user_id: yang

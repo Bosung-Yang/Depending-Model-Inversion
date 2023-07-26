@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/452be7518fdf4feb813533f98e681886/artifacts
+end_time: 1690367424969
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 452be7518fdf4feb813533f98e681886
+run_name: nervous-gull-95
+run_uuid: 452be7518fdf4feb813533f98e681886
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690367424123
+status: 4
+tags: []
+user_id: yang

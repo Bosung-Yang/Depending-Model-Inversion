@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/b39b0e3c098d40f38872700df965954e/artifacts
+end_time: 1690367486704
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b39b0e3c098d40f38872700df965954e
+run_name: nervous-shark-374
+run_uuid: b39b0e3c098d40f38872700df965954e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690367485876
+status: 4
+tags: []
+user_id: yang

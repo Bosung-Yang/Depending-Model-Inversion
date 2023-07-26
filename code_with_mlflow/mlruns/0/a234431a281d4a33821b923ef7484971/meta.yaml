@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/a234431a281d4a33821b923ef7484971/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a234431a281d4a33821b923ef7484971
+run_name: bemused-cow-579
+run_uuid: a234431a281d4a33821b923ef7484971
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690367523236
+status: 1
+tags: []
+user_id: yang

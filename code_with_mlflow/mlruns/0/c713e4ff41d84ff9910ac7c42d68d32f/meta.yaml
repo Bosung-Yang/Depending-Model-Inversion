@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/c713e4ff41d84ff9910ac7c42d68d32f/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c713e4ff41d84ff9910ac7c42d68d32f
+run_name: redolent-shrimp-85
+run_uuid: c713e4ff41d84ff9910ac7c42d68d32f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690367403016
+status: 1
+tags: []
+user_id: yang
