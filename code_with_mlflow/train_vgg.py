@@ -7,7 +7,6 @@ from torchvision import transforms, datasets
 import time
 import torch.nn.functional as F
 import torch
-import cv2 as cv
 from torchvision import transforms, datasets
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
