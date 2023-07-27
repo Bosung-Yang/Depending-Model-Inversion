@@ -7,6 +7,7 @@ from torchvision import transforms, datasets
 import time
 import torch.nn.functional as F
 import torch
+import cv2 as cv
 from torchvision import transforms, datasets
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
@@ -159,6 +160,7 @@ if __name__ == '__main__':
     best_score = 0
     
     for e in range(nepoch):
+        print(e)
         for i, data in enumerate(train_loader):
             img, label = data
             img = img.to(device)
@@ -185,7 +187,7 @@ if __name__ == '__main__':
             best_score = answer/total
             save_model_name = args.save_name
             torch.save(student.state_dict(),save_model_name)
-    print('a')
+    
     mlflow.log_metric("accuracy", best_score)
     signature = infer_signature(X, predictions)
     mlflow.pytorch.log_model(student,"model", signature=signature)
