@@ -167,7 +167,6 @@ if __name__ == '__main__':
                 train_vib(img = img, label = label, model = student, teacher = teacher, encoder = enc, optimizer = optim, mode = args.mode)
             else:
                 train(img = img, label = label, model = student, teacher = teacher, encoder = enc, optimizer = optim, mode = args.mode, temp = args.temp)
-		    print(e)
         answer = 0
         total = 0
         dct_answer = 0
