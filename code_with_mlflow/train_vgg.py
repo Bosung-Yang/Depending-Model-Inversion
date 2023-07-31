@@ -101,7 +101,7 @@ def train(img, label, model, teacher, encoder, optimizer, mode, temp):
 if __name__ == '__main__':
     parser = ArgumentParser(description='Step1 : Training Face Classifiers')
     parser.add_argument('--gpu')
-    parser.add_argument('--epoch',default=100)
+    parser.add_argument('--epoch',default=10)
     parser.add_argument('--mode',default='none')
     parser.add_argument('--student',default='vgg16')
     parser.add_argument('--teacher',default='vgg16')
@@ -112,7 +112,7 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=1)
     
     args = parser.parse_args()
-    os.environ['CUDA_VISIBLE_DEVICES'] = str(args.gpu)
+    os.environ['CUDA_VISIBLE_DEVICES'] = '0'
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # dataloader
     data_path = '../../data/'
@@ -187,6 +187,4 @@ if __name__ == '__main__':
             torch.save(student.state_dict(),save_model_name)
     
     mlflow.log_metric("accuracy", best_score)
-    signature = infer_signature(X, predictions)
-    mlflow.pytorch.log_model(student,"model", signature=signature)
     print(args.save_name,args.student,' best accuracy : ',best_score)
