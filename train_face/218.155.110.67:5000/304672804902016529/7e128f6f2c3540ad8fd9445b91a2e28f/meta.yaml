@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Depending-Model-Inversion/train_face/218.155.110.67:5000/304672804902016529/7e128f6f2c3540ad8fd9445b91a2e28f/artifacts
+end_time: 1690872862396
+entry_point_name: ''
+experiment_id: '304672804902016529'
+lifecycle_stage: active
+run_id: 7e128f6f2c3540ad8fd9445b91a2e28f
+run_name: carefree-gnat-851
+run_uuid: 7e128f6f2c3540ad8fd9445b91a2e28f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690872773276
+status: 3
+tags: []
+user_id: ubuntu

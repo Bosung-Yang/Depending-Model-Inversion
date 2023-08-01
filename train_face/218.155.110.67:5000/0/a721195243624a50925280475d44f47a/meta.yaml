@@ -1,0 +1,15 @@
+artifact_uri: /home/ubuntu/Depending-Model-Inversion/train_face/218.155.110.67:5000/0/a721195243624a50925280475d44f47a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a721195243624a50925280475d44f47a
+run_name: bright-steed-866
+run_uuid: a721195243624a50925280475d44f47a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690872448095
+status: 1
+tags: []
+user_id: ubuntu
