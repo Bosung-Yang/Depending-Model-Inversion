@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/9873adba47d14dfe9cfda317b588aadc/artifacts
+end_time: 1690871504008
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9873adba47d14dfe9cfda317b588aadc
+run_name: aged-cat-645
+run_uuid: 9873adba47d14dfe9cfda317b588aadc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690871493131
+status: 4
+tags: []
+user_id: root

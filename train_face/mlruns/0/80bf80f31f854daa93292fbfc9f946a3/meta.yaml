@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/80bf80f31f854daa93292fbfc9f946a3/artifacts
+end_time: 1690871452532
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 80bf80f31f854daa93292fbfc9f946a3
+run_name: burly-bug-654
+run_uuid: 80bf80f31f854daa93292fbfc9f946a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690871442976
+status: 4
+tags: []
+user_id: root
