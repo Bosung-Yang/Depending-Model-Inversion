@@ -1,0 +1,15 @@
+artifact_uri: file:///workspace/Depending-Model-Inversion/train_face/mlruns/485533501467472721/aa9f9b0082004a8695ac24ebe80e0602/artifacts
+end_time: 1690875261255
+entry_point_name: ''
+experiment_id: '485533501467472721'
+lifecycle_stage: active
+run_id: aa9f9b0082004a8695ac24ebe80e0602
+run_name: traveling-grouse-339
+run_uuid: aa9f9b0082004a8695ac24ebe80e0602
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690875100216
+status: 3
+tags: []
+user_id: root
