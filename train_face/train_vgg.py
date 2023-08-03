@@ -111,9 +111,11 @@ if __name__ == '__main__':
     parser.add_argument('--num_class',type=int)
     parser.add_argument('--seed', type=int, default=1)
     
+    torch.set_num_threads(8)
     args = parser.parse_args()
     os.environ['CUDA_VISIBLE_DEVICES'] = '0'
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(device)
     # dataloader
     data_path = '../../data/'
     batch_size = 64
@@ -134,19 +136,19 @@ if __name__ == '__main__':
         ])
     }
     set_seed(args.seed)
-
+    print('datalonader')
     train_images = datasets.ImageFolder(data_path+train_folder,image_transforms['train'])
     train_loader = torch.utils.data.DataLoader(train_images, batch_size = 64 ,num_workers=4,shuffle=True)
     test_images = datasets.ImageFolder(data_path+test_folder,image_transforms['test'])
     test_loader = torch.utils.data.DataLoader(test_images, batch_size = 64 ,num_workers=4,shuffle=True) 
-
+    
     # model
     student = util.get_model(args.student, args.num_class)
+    print(student)
     student = student.cuda()
-
+    print('teacher')
     teacher = util.get_model(args.teacher, args.num_class)
     #teacher.load_state_dict(torch.load(args.teacher_path))
-    teacher = teacher.cuda()
     
 
     enc=None
@@ -156,7 +158,7 @@ if __name__ == '__main__':
 							    lr=lr)
     nepoch = int(args.epoch)
     best_score = 0
-    
+    print('start')
     for e in range(nepoch):
         print(e)
         for i, data in enumerate(train_loader):

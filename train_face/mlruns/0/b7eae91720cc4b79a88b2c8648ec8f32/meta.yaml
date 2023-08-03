@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/b7eae91720cc4b79a88b2c8648ec8f32/artifacts
+end_time: 1690871005132
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b7eae91720cc4b79a88b2c8648ec8f32
+run_name: bittersweet-gnat-12
+run_uuid: b7eae91720cc4b79a88b2c8648ec8f32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690870806870
+status: 4
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/1fb0c5dd5a2e46d2ac0bef1702de8d18/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1fb0c5dd5a2e46d2ac0bef1702de8d18
+run_name: flawless-duck-260
+run_uuid: 1fb0c5dd5a2e46d2ac0bef1702de8d18
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690950548997
+status: 1
+tags: []
+user_id: root

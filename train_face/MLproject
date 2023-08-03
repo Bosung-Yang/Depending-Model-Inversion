@@ -6,7 +6,7 @@ entry_points:
   main:
     parameters:
       gpu: {type: string, default: 0}
-      epoch: {type: int, default: 5}
+      epoch: {type: int, default: 100}
       model: {type: string, default: 'vgg16'}
       teacher: {type: string, default: 'vgg16'}
       teacher_path: {type: string, default: './vgg16.pth'}

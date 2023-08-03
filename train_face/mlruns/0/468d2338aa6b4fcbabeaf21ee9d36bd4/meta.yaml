@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/yang/inversion/Depending-Model-Inversion/code_with_mlflow/mlruns/0/468d2338aa6b4fcbabeaf21ee9d36bd4/artifacts
+end_time: 1690871535651
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 468d2338aa6b4fcbabeaf21ee9d36bd4
+run_name: resilient-dove-212
+run_uuid: 468d2338aa6b4fcbabeaf21ee9d36bd4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690871521112
+status: 4
+tags: []
+user_id: root

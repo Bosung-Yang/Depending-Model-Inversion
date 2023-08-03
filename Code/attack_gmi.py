@@ -1,5 +1,5 @@
 from losses import completion_network_loss, noise_loss
-from utils import *
+#from utils import *
 from classify import *
 from generator import *
 from discri import *
@@ -85,12 +85,12 @@ if __name__ == "__main__":
     global args, logger
 
     parser = ArgumentParser(description='Step2: targeted recovery')
-    parser.add_argument('--model', default='linear', help='VGG16 | IR152 | FaceNet64')
-    parser.add_argument('--device', type=str, default='4,5,6,7', help='Device to use. Like cuda, cuda:0 or cpu')
+    parser.add_argument('--model', default='resnet_softmax', help='VGG16 | IR152 | FaceNet64')
+    parser.add_argument('--device', type=str, default='0', help='Device to use. Like cuda, cuda:0 or cpu')
     parser.add_argument('--improved_flag', action='store_true', default=False, help='use improved k+1 GAN')
     parser.add_argument('--dist_flag', action='store_true', default=False, help='use distributional recovery')
-    parser.add_argument('--path',default='./model.pth')
-    parser.add_argument('--exp',default='')
+    parser.add_argument('--path',default='./resent.pth')
+    parser.add_argument('--exp',default='test_exp')
     parser.add_argument('--num_class',type=int,default=1000)
     args = parser.parse_args()
     logger = get_logger()
@@ -106,12 +106,12 @@ if __name__ == "__main__":
     G = torch.nn.DataParallel(G).cuda()
     if args.improved_flag == True:
         D = MinibatchDiscriminator()
-        path_G = './checkpoint/improved_celeba_G.tar'
-        path_D = './checkpoint/improved_celeba_D.tar'
+        path_G = '../../data/improved_celeba_G.tar'
+        path_D = '../../data/checkpoint/improved_celeba_D.tar'
     else:
         D = DGWGAN(3)
-        path_G = './checkpoint/celeba_G.tar'
-        path_D = './checkpoint/celeba_D.tar'
+        path_G = '../../data/celeba_G.tar'
+        path_D = '../../data/celeba_D.tar'
     
     D = torch.nn.DataParallel(D).cuda()
     ckp_G = torch.load(path_G)
@@ -141,10 +141,10 @@ if __name__ == "__main__":
     output_acc_list = np.zeros((iter_times))
     output_acc5_list = np.zeros((iter_times))
     for i in range(1):
-        iden = torch.from_numpy(np.arange(50))
+        iden = torch.from_numpy(np.arange(200))
 
         # evaluate on the first 300 identities only
-        for idx in range(6):
+        for idx in range(1):
             #print("--------------------- Attack batch [%s]------------------------------" % idx)
             if args.dist_flag == True:
                 acc, acc_5, acc_var, acc_var5, acc_list, acc5_list = dist_inversion(G, D, T, E, iden, itr=i, lr=2e-2, momentum=0.9, lamda=100, iter_times=iter_times, clip_range=1, improved=args.improved_flag, num_seeds=1, exp_name=args.exp)
@@ -152,16 +152,16 @@ if __name__ == "__main__":
                 acc, acc_5, acc_var, acc_var5, acc_list, acc5_list = inversion(G, D, T, E, iden, itr=i, lr=2e-2, momentum=0.9, lamda=100, iter_times=iter_times, clip_range=1, improved=args.improved_flag, num_seeds=1, exp_name=args.exp)
             output_acc_list += np.array(acc_list)
             output_acc5_list += np.array(acc5_list)
-            iden = iden + 50
+            iden = iden + 200
             aver_acc += acc
             aver_acc5 += acc_5
 
             aver_var += acc_var 
             aver_var5 += acc_var5
             
-    print('top1[\''+args.exp+'\'] = ',np.round(output_acc_list/6,4).tolist())
-    print('top5[\''+args.exp+'\'] = ',np.round(output_acc5_list/6,4).tolist())
-    print('Acc : ', aver_acc/6, 'ACC5 : ', aver_acc5/6, 'ACC_Var: ', aver_var/6, 'acc5_var:', aver_var5/6 )
+    print('top1[\''+args.exp+'\'] = ',np.round(output_acc_list,4).tolist())
+    print('top5[\''+args.exp+'\'] = ',np.round(output_acc5_list,4).tolist())
+    print('Acc : ', aver_acc, 'ACC5 : ', aver_acc5, 'ACC_Var: ', aver_var/6, 'acc5_var:', aver_var5/5 )
 
 
 
