@@ -18,7 +18,9 @@ from attack import inversion, dist_inversion
 from generator import Generator
 from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
 import classify
-import classify
+import mlflow.pytorch
+from mlflow.models import infer_signature
+import mlflow
 
 def get_model(architecture,num_class):
     if architecture == 'linear':
@@ -155,6 +157,8 @@ if __name__ == "__main__":
     print('top1[\''+args.exp+'\'] = ',np.round(output_acc_list,4).tolist())
     print('top5[\''+args.exp+'\'] = ',np.round(output_acc5_list,4).tolist())
     print('Acc : ', aver_acc, 'ACC5 : ', aver_acc5, 'ACC_Var: ', aver_var, 'acc5_var:', aver_var5 )
+    mlflow.log_metric("Top1", aver_acc)
+    mlflow.log_metric("Top5", aver_acc5)
 
 
 
