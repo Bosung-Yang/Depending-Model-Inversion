@@ -42,4 +42,5 @@ python attack_dgmi.py --model=vgg16_softmax --path=./model.pth --exp=gmi --num_c
 ## Reference
 <https://github.com/SCccc21/Knowledge-Enriched-DMI>   
 <https://github.com/MKariya1998/GMI-Attack>
-.
+
+## 0804 : edit inversion attack with mlflow
