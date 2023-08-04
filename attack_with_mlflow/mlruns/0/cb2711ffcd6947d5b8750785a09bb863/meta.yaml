@@ -1,0 +1,15 @@
+artifact_uri: file:///workspace/Depending-Model-Inversion/attack_with_mlflow/mlruns/0/cb2711ffcd6947d5b8750785a09bb863/artifacts
+end_time: 1691117594101
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cb2711ffcd6947d5b8750785a09bb863
+run_name: gaudy-lynx-903
+run_uuid: cb2711ffcd6947d5b8750785a09bb863
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1691117592520
+status: 4
+tags: []
+user_id: root

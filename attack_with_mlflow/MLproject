@@ -7,7 +7,7 @@ entry_points:
     parameters:
       gpu: {type: string, default: 0}
       model: {type: string, default: 'vgg16'}
-      saved_name: {type: string, default: './lastest.pth'}
+      saved_name: {type: string, default: '/workspace/vgg.pth'}
       temp: {type: int, default: 64}
       num_class: {type: int, default: 1000}
       attack_type: {type: string, default: 'gmi'}
@@ -16,7 +16,6 @@ entry_points:
           python attack_models.py \
             --device {gpu} \
             --model {model} \
-            --teacher_path {teacher_path} \
             --path {saved_name} \
             --num_class {num_class}\
             --attack_type {attack_type}

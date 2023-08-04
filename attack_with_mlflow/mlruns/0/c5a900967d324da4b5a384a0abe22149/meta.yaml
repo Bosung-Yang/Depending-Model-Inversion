@@ -1,0 +1,15 @@
+artifact_uri: file:///workspace/Depending-Model-Inversion/attack_with_mlflow/mlruns/0/c5a900967d324da4b5a384a0abe22149/artifacts
+end_time: 1691117692808
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c5a900967d324da4b5a384a0abe22149
+run_name: crawling-wolf-7
+run_uuid: c5a900967d324da4b5a384a0abe22149
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1691117689044
+status: 4
+tags: []
+user_id: root

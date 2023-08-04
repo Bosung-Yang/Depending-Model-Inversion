@@ -117,7 +117,7 @@ if __name__ == '__main__':
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(device)
     # dataloader
-    data_path = '../../data/'
+    data_path = '/workspace/data/data/'
     batch_size = 64
     train_folder = 'train/'
     test_folder = 'test/'
